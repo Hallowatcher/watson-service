@@ -1,4 +1,5 @@
 # watson-service
+[![AppVeyor](https://img.shields.io/appveyor/ci/hallowatcher/watson-service.svg)](https://ci.appveyor.com/project/Hallowatcher/watson-service)
 
 ## Synopsis
 
