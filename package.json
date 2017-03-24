@@ -1,0 +1,41 @@
+{
+  "name": "watson-service",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "mocha -r ts-node/register test/**/*.spec.ts",
+    "clean": "rd dist /s /q",
+    "build": "npm run clean & tsc",
+    "start": "node index.js",
+    "install-service": "npm run build & node index.js --install"
+  },
+  "author": "Uwe Wiemer",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.15.3",
+    "getmac": "^1.2.1",
+    "glob": "^7.1.1",
+    "ini": "^1.3.4",
+    "moment": "^2.18.0",
+    "node-windows": "^0.1.14",
+    "os-service": "^1.4.0",
+    "stdio": "^0.2.7",
+    "winser": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^3.4.35",
+    "@types/mocha": "^2.2.40",
+    "@types/node": "^7.0.8",
+    "@types/proxyquire": "^1.3.27",
+    "@types/sinon": "^1.16.36",
+    "awesome-typescript-loader": "^3.1.2",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "nock": "^9.0.9",
+    "proxyquire": "^1.7.11",
+    "sinon": "^2.1.0",
+    "ts-node": "^3.0.2",
+    "typescript": "^2.2.1"
+  }
+}
