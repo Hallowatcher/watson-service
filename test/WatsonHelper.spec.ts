@@ -6,6 +6,8 @@ const WatsonHelper = WatsonHelperFile.default;
 
 describe('WatsonHelper', function () {
 
+  this.timeout(10000);
+
   describe('.werTickToDate', function () {
     it('should create a helper object', function () {
       chai.assert.isNotNull(new WatsonHelper())
