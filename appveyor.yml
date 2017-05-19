@@ -7,7 +7,7 @@ install:
   - set CI=true
   - npm -g install npm@latest
   - set PATH=%APPDATA%\npm;%PATH%
-  - npm install codecov -g
+  # - npm install codecov -g
   - npm install
 matrix:
   fast_finish: true
@@ -17,5 +17,5 @@ test_script:
   - node --version
   - npm --version
   - npm test
-on_success:
-  - codecov -t be6196da-ac54-486d-be61-bfd6c8f8e3fe
+# on_success:
+#   - codecov -t be6196da-ac54-486d-be61-bfd6c8f8e3fe
